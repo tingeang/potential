@@ -4,9 +4,8 @@
 	<link rel= "stylesheet" type = "text/css" href = "style.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i,700,700i" rel="stylesheet">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
     
 </head>
 <body>
@@ -33,7 +32,7 @@
 
 <!-- contact info -->
   <div id="contactinfo" class="workcontent">
-  <img src="tingloet.jpg">
+  <img src="images/tingloet.jpg">
   <h2>Ting is a Graphic Design Junior at Rhode Island School of Design.<br>
   Resume available upon request.</h2>
   <a href="javascript:void(0)" onclick="document.getElementById('contactinfo').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
@@ -42,30 +41,33 @@
 <!-- work info -->
   <div id="light" class="workcontent">
   <img src="images/useless01.jpg">
+  <h1>Useless Machine</h1>
   <p>Useless cover version of an eye chart. This generates a new experience by encouraging viewers to search for hidden element (E facing on the other side) to only see none as it is actually a completely useless eye test.</p><br>
   <h4>Fall 2017</h4><br>
-  <img src="useless02.jpg">
-  <img src="useless03.jpg">
-  <img src="useless04.jpg">
+  <img src="images/useless02.jpg">
+  <img src="images/useless03.jpg">
+  <img src="images/useless04.jpg">
   <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
   </div>
 
   <div id="light1" class="workcontent">
-  <img src="esc01.jpg">
-  <p>Useless cover version of an eye chart. This generates a new experience by encouraging viewers to search for hidden element (E facing on the other side) to only see none as it is actually a completely useless eye test.</p><br>
+  <img src="images/esc01.jpg">
+  <h1>Escape</h1>
+  <p>An exploration of how the visual can embed meaning into the word's graphic representation. 'Escape' can be defined as 'fail to be noticed.' Using this aspect of the word, a 30"x30" puzzle was created for viewers to find the word 'escape' which exclusively existed among the letters E, S, C, A and P.</p><br>
   <h4>Fall 2017</h4><br>
-  <img src="esc02.jpg">
-  <img src="esc03.jpg">
+  <img src="images/esc02.jpg">
+  <img src="images/esc03.jpg">
   <a href="javascript:void(0)" onclick="document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
   </div>
 
   <div id="light2" class="workcontent">
-  <img src="hair01.png">
+  <img src="images/hair01.png">
+  <h1>Hair Loss Statistic Calendar</h1>
   <p>"Hair loss sufferers lose approximately 100 strands each day" 
    Using calendar as a format to convey this statistic by visually demonstrating hair loss progress. The man loses more hair as the day goes by.</p> <br>
   <h4>Spring 2017<h4> <br>
-  <img src="hair02.gif">
-  <img src="hair03.jpg">
+  <img src="images/hair02.gif">
+  <img src="images/hair03.jpg">
    <a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
   </div>
 
@@ -79,8 +81,8 @@
 <script type="text/javascript">
 
 $(".workcontent").each(function () {
-    var randomtop = Math.floor(Math.random() * 45) + 10 + '%';
-    var randomleft = Math.floor(Math.random() * 45) + 10 + '%';
+    var randomtop = Math.floor(Math.random() * 30) + 15 + '%';
+    var randomleft = Math.floor(Math.random() * 30) + 15 + '%';
     $(this).css({
         "top": randomtop,
         "left": randomleft,
