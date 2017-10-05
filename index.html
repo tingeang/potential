@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>Ting Loetaphirom</title>
+	<link rel= "stylesheet" type = "text/css" href = "style.css">
+  <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,500,500i,700,700i" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    
+</head>
+<body>
+  <div id="footer">
+    <a href="javascript:void(0)" onclick="document.getElementById('contactinfo').style.display='block';document.getElementById('fade').style.display='block'"><p>Ting Loetaphirom</p></a>
+  </div>
+  <div id="footerright">
+    <a href="mailto:kloetaph@risd.edu" class="emaillink"><p>kloetaph@risd.edu</p></a>
+  </div>
+
+
+  <div id="navmenu"> 
+  <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">USELESS MACHINE</a> <br>
+  <a href="javascript:void(0)" onclick="document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'">ESCAPE</a> <br>
+  <a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'">HAIR LOSS STATISTICS CALENDAR</a> <br>
+  "THANKS, YOUR ENGLISH IS GOOD TOO!" <br>
+  GUIDE TO FLAT LAY PHOTOGRAPHY <br>
+  SHADE <br>
+  LO-RES <br>
+  THE MAN WITH THE GOLDEN ARM <br>
+  BLESS YOU <br>
+  WHAT WE SEE WHEN WE READ <br>
+  </div>
+
+<!-- contact info -->
+  <div id="contactinfo" class="workcontent">
+  <img src="images/tingloet.jpg">
+  <h2>Ting is a Graphic Design Junior at Rhode Island School of Design.<br>
+  Resume available upon request.</h2>
+  <a href="javascript:void(0)" onclick="document.getElementById('contactinfo').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
+  </div>
+
+<!-- work info -->
+  <div id="light" class="workcontent">
+  <img src="images/useless01.jpg">
+  <p>Useless cover version of an eye chart. This generates a new experience by encouraging viewers to search for hidden element (E facing on the other side) to only see none as it is actually a completely useless eye test.</p><br>
+  <h4>Fall 2017</h4><br>
+  <img src="images/useless02.jpg">
+  <img src="images/useless03.jpg">
+  <img src="images/useless04.jpg">
+  <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
+  </div>
+
+  <div id="light1" class="workcontent">
+  <img src="images/esc01.jpg">
+  <p>Useless cover version of an eye chart. This generates a new experience by encouraging viewers to search for hidden element (E facing on the other side) to only see none as it is actually a completely useless eye test.</p><br>
+  <h4>Fall 2017</h4><br>
+  <img src="images/esc02.jpg">
+  <img src="images/esc03.jpg">
+  <a href="javascript:void(0)" onclick="document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
+  </div>
+
+  <div id="light2" class="workcontent">
+  <img src="images/hair01.png">
+  <p>"Hair loss sufferers lose approximately 100 strands each day" 
+   Using calendar as a format to convey this statistic by visually demonstrating hair loss progress. The man loses more hair as the day goes by.</p> <br>
+  <h4>Spring 2017<h4> <br>
+  <img src="images/hair02.gif">
+  <img src="images/hair03.jpg">
+   <a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'"><h3>&#10006</h3></a>
+  </div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$(".workcontent").each(function () {
+    var randomtop = Math.floor(Math.random() * 50) + 10 + '%';
+    var randomleft = Math.floor(Math.random() * 50) + 10 + '%';
+    $(this).css({
+        "top": randomtop,
+        "left": randomleft,
+    });
+});
+
+$( function() {
+    $( ".workcontent" ).draggable({stack: ".workcontent", scroll: false});
+  } );
+
+
+
+</script>
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
